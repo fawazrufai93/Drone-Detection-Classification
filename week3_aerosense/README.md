@@ -7,13 +7,7 @@ functions** (copied unchanged into `inputs/`).
 RF Activity Detected -> Signal Features -> Classification -> Confidence -> Alert
 ```
 
-## Run
-```
-pip install -r requirements.txt
-python task1_detection.py        # Task 1  -> results/task1_*
-python task2_classification.py   # Task 2  -> results/task2_*, models/aerosense_classifier.joblib
-python task3_false_alarm.py      # Task 3  -> results/task3_*
-python aerosense_demo.py         # the engine on example captures -> results/engine_demo.txt
+
 ```
 
 | File | Role |
