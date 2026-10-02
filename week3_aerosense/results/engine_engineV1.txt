@@ -1,0 +1,41 @@
+AeroSense RF Detection Engine v1  (classifier: Random forest, alert at UAV confidence >= 0.7)
+
+=== UAV-like signal  | truth: [('UAV', 2470.1)]
+RF Activity Detected : YES  (1 signal(s); noise floor -77.9, threshold -69.9)
+  [1] Signal Features : f=2470.16 MHz  BW=4.35 MHz  P=-18.4  SNR=72.5 dB  flatness=0.0002  PAPR=8.3 dB
+      Classification : UAV
+      Confidence     : 1.00
+      Alert          : *** UAV ALERT *** at 2470.16 MHz
+
+=== Wi-Fi-like signal  | truth: [('WiFi', 2411.2)]
+RF Activity Detected : YES  (2 signal(s); noise floor -77.1, threshold -69.1)
+  [1] Signal Features : f=2415.46 MHz  BW=29.08 MHz  P=-38.8  SNR=52.1 dB  flatness=0.0805  PAPR=9.4 dB
+      Classification : WiFi
+      Confidence     : 1.00
+      Alert          : none
+  [2] Signal Features : f=2479.46 MHz  BW=9.43 MHz  P=-44.4  SNR=46.5 dB  flatness=0.0786  PAPR=10.2 dB
+      Classification : UAV
+      Confidence     : 0.51
+      Alert          : none
+
+=== Generic narrowband signal  | truth: [('Generic', 2437.9)]
+RF Activity Detected : YES  (1 signal(s); noise floor -101.0, threshold -93.0)
+  [1] Signal Features : f=2437.92 MHz  BW=1.40 MHz  P=-27.5  SNR=63.4 dB  flatness=0.0011  PAPR=8.0 dB
+      Classification : Generic
+      Confidence     : 0.99
+      Alert          : none
+
+=== Background noise only  | truth: noise only
+RF Activity Detected : NO  (noise floor -103.3, threshold -95.3)
+Alert                : none
+
+=== UAV-like + Wi-Fi-like (separate bands)  | truth: [('UAV', 2479.9), ('WiFi', 2436.7)]
+RF Activity Detected : YES  (2 signal(s); noise floor -75.1, threshold -67.1)
+  [1] Signal Features : f=2436.40 MHz  BW=38.15 MHz  P=-19.6  SNR=71.2 dB  flatness=0.0114  PAPR=9.4 dB
+      Classification : WiFi
+      Confidence     : 1.00
+      Alert          : none
+  [2] Signal Features : f=2479.96 MHz  BW=2.91 MHz  P=-29.9  SNR=61.0 dB  flatness=0.0023  PAPR=8.7 dB
+      Classification : UAV
+      Confidence     : 0.98
+      Alert          : *** UAV ALERT *** at 2479.96 MHz

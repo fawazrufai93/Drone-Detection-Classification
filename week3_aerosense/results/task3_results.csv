@@ -1,0 +1,6 @@
+scenario,noise_floor_dbm,true_signals,detection_rate,engine_detection_rate,false_alarm_rate,engine_false_alarm_rate,false_detections_per_capture,classification_accuracy
+Low noise,-100.0,300,1.0,1.0,0.0,0.0,0.06,1.0
+High noise,-70.0,300,0.94,0.94,0.0,0.0,0.143,0.975
+Multiple signals,-90.0,900,0.957,0.952,0.0,0.0,0.203,0.831
+Overlapping signals,-90.0,600,0.998,0.998,0.0,0.0,0.167,0.474
+Weak signals,-90.0,300,0.667,0.087,0.0,0.0,0.0,0.423

@@ -1,0 +1,7 @@
+source,center_mhz,expected,detected_in_fraction_of_sweeps
+WiFi ch1,2412,always on,1.0
+WiFi ch11,2462,always on,1.0
+Beacon (CW),2428,always on,1.0
+Weak link,2485,always on,1.0
+Bluetooth-like,2441,ON 35% of dwells,0.42
+Wideband burst,2450,ON 20% of dwells,0.41
